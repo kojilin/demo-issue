@@ -1,0 +1,14 @@
+plugins {
+	id 'java-library'
+}
+
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+dependencies {
+	implementation project(":search:common")
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

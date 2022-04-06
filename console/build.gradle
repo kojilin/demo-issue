@@ -1,0 +1,15 @@
+plugins {
+    id 'application'
+}
+
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+dependencies {
+    implementation project(":api")
+    implementation project(":search:common")
+}
+
+application {
+    mainClass = 'com.example.console.demo.DemoConsole'
+}
